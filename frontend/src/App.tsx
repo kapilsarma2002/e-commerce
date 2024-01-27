@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
+import Header from './components/Header.tsx'
+import Footer from './components/Footer.tsx'
 
 const Home = () => (
   <div>
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/signin" element={<SignIn />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   )

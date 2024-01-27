@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     <div className="bg-black text-white p-4 flex justify-between items-center relative">
       <div className="flex items-center">
         <Link to="/" className="text-lg font-bold text-white">
-          Your Website Name
+          ShopSphere
         </Link>
       </div>
       <div className="flex items-center">
