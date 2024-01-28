@@ -1,12 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
-
-const Home = () => (
-  <div>
-    <h2>Home Page</h2>
-  </div>
-)
+import HomeScreen from './screens/HomeScreen.tsx'
 
 const Cart = () => (
   <div>
@@ -26,7 +21,7 @@ const App = () => {
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeScreen />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/signin" element={<SignIn />} />
         </Routes>
